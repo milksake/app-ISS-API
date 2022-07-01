@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ISS_API.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="Teal" Padding="24" CornerRadius="0">
+            <Label Text="Where the ISS at?" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Info on the International Space Station" FontSize="Title" Padding="30,10,30,10"/>
+        <Button Text="Get info" Clicked="Button_Clicked"/>
+        <Image Source="https://static.dw.com/image/60008250_101.jpeg"/>
+        <Label Padding="30,30,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Name: " FontAttributes="Bold"/>
+                        <Span Text="{Binding data.name}"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Label Padding="30,5,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Id: " FontAttributes="Bold"/>
+                        <Span Text="{Binding data.id}"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Label Padding="30,5,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Latitude: " FontAttributes="Bold"/>
+                        <Span Text="{Binding data.latitude}"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Label Padding="30,5,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Longitude: " FontAttributes="Bold"/>
+                        <Span Text="{Binding data.longitude}"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Label Padding="30,5,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Altitude: " FontAttributes="Bold"/>
+                        <Span Text="{Binding data.altitude}"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Label Padding="30,5,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Velocity: " FontAttributes="Bold"/>
+                        <Span Text="{Binding data.velocity}"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Label Padding="30,5,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Visibility: " FontAttributes="Bold"/>
+                        <Span Text="{Binding data.visibility}"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Label Padding="30,5,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Footprint: " FontAttributes="Bold"/>
+                        <Span Text="{Binding data.footprint}"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Label Padding="30,5,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Day Number: " FontAttributes="Bold"/>
+                        <Span Text="{Binding data.daynum}"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Label Padding="30,5,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Timestamp: " FontAttributes="Bold"/>
+                        <Span Text="{Binding data.timestamp}"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </StackLayout>
+
+</ContentPage>
